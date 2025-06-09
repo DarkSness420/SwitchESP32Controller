@@ -6,9 +6,15 @@ This project is a controller for the Nintendo Switch based on the ESP32 platform
 
 This repository is based on work from [UARTSwitchCon](https://github.com/nullstalgia/UARTSwitchCon), [BlueCubeMod](https://github.com/NathanReeves/BlueCubeMod) by Nathan Reeves, and [OpenSwitchPad](https://github.com/agustincampeny/OpenSwitchPad) by Agustin Campeny, and has been altered to allow writing text to an OLED screen and to send controller inputs using just Python functions.
 
+The OLED screen wiring is as follows:  
+- VCC to 3.3V  
+- GND to Ground  
+- SCL to GPIO 22  
+- SDA to GPIO 21
+
 The OLED screen functionality uses the [esp-idf-ssd1306](https://github.com/nopnop2002/esp-idf-ssd1306) library by nopnop2002.
 
-**Note:** In the UARTSwitchCon `protocol.md`, the MSB and LSB byte ordenering are swapped and should be reversed.
+**Note:** In the UARTSwitchCon `protocol.md`, the MSB and LSB byte ordering are swapped and should be reversed.
 
 ## Example Usage
 
