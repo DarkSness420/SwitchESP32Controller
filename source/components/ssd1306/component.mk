@@ -1,0 +1,5 @@
+COMPONENT_ADD_INCLUDEDIRS := .
+
+COMPONENT_SRCS := ssd1306.c ssd1306_spi.c ssd1306_i2c_legacy.c
+
+COMPONENT_PRIV_REQUIRES := driver
